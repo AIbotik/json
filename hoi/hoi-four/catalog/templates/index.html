@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="pls">
+  <h1>Hoi4</h1>
+
+    <p>Welcome to <em>Hoi4</em> where you can buy armor to survival in world</p>
+
+  <h2>Dynamic content</h2>
+
+    <p>The shop has the following record counts:</p>
+    <ul>
+      <li><strong>Product:</strong> {{ num_product }}</li>
+      <li><strong>Copies:</strong> {{ num_instances }}</li>
+      <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+      <li><strong>Manufacturer:</strong> {{ num_manufacturer }}</li>
+    </ul>
+</div>
+
+{% endblock %}
